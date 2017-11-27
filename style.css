@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.grid {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  border: 2px solid red;
+
+  grid-template: 2fr 1fr 1fr / repeat(3, 100px);
+  grid-gap: 10px;
+}
+
+.box {
+
+  background-color: skyblue;
+  border-radius: 10px;
+  border: 2px solid darkblue;
+}
+
+.a {
+
+  grid-row: 1 / span 3;
+  grid-area: 1 / 1 / span 3 / 3;
+}
